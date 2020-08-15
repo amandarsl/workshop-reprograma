@@ -1,0 +1,206 @@
+
+/* RESETAR DEFAULT */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* REUTILIZÁVEIS */
+
+.btn {
+  text-transform: uppercase;
+  padding: 0.6rem 1.5rem;
+  font-size: .8rem;
+  font-weight: bold;
+  border-radius: 3rem;
+  color:#7E459B;
+}
+
+.btn:hover {
+  background-color: #502b62;
+  color: white;
+}
+
+.btn-branco {
+  background-color: white;
+}
+
+.btn-roxo { 
+  border: 1px solid #7E459B;
+  margin: 0 auto
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+
+/* HEADER BANNER */
+.banner {
+  background: url(../img/bg-amanda.jpg) center no-repeat;
+  background-size: cover;
+  height: 90vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner-titulo {
+  font-size: 3rem;
+  margin: 1rem 0;
+  text-shadow: 1px 1px 3px rgba(150, 150, 150, 1); /* Gerado no https://css3gen.com/text-shadow/ */
+}
+
+.banner__subtitulo {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+/* SEÇÃO SOBRE */
+
+.sobre-colunas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobre-titulo {
+  font-size: 2.5rem;
+  color: #c4c4c4;
+  margin-top: 3rem;    
+}
+
+.sobre-descricao,
+.sobre-habilidades  {
+  width: 40%;
+}
+
+.sobre-descricao__destaque, 
+.sobre-habilidades__titulo {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;  
+}
+
+.sobre-descricao__texto {
+  margin-bottom: 2.6rem;
+  font-size: 1rem;
+}
+
+.sobre-habilidades__lista {
+  padding-left: 1rem;  
+  line-height: 1.7; 
+}
+
+/* REDES SOCIAIS */
+.redes-sociais {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem 0;
+  flex-wrap: wrap;
+}
+
+.redes-sociais__link{
+  min-width: 20%;
+  background-color: #ef5ba1;
+  padding: 2rem;
+  color: white;
+  text-align: center;  
+  margin: 1rem 0;
+  border-radius: 100%;
+}
+
+.redes-sociais__link:hover{
+  background-color: #7E459B;
+}
+
+.redes-sociais__img{
+  margin-bottom: 1rem;
+}
+
+.redes-sociais__usuario{
+  margin: 0;
+  font-size: 1.325rem; 
+}
+
+/* RODAPÉ */
+.rodape {
+  background-color: #E3E3E3;
+  margin-top: 3rem;
+  text-align: center;
+  padding: .5rem;
+}
+
+.rodape__texto {
+  font-size: 1rem;
+}
+
+.rodape__texto-love {
+  color: red;
+}
+
+.rodape__texto-reprograma {
+  color: #7E459B;
+  font-weight: bold;
+}
+
+.rodape__female {
+  background-color: #7E459B;
+  color: #debbdd;
+  padding: .1rem;
+}
+
+/* MEDIA QUERIES */
+/* TABLET PAISAGEM */
+@media (max-width:1024px){
+  .container{
+      max-width: 960px;
+  }
+}
+
+/* TABLET PAISAGEM / CELULAR */
+@media(max-width:768px){
+  .container{
+      max-width: 960px;
+      padding: 0 5rem;
+  }
+
+  .banner {
+    height: 54vh;
+  }
+
+  .sobre-colunas{
+      display: block;
+  }
+  
+  .sobre-descricao, 
+  .sobre-habilidades{
+      width:100%;
+  }
+
+  .sobre-descricao__texto{
+      margin-bottom: 2rem;
+  }
+  
+  .sobre-habilidades__titulo{
+      margin-top:2rem;
+  }
+
+  .redes-sociais{
+      flex-wrap: wrap;
+  }
+}
